@@ -108,7 +108,7 @@ for i in range(0,len(st.session_state.pokemons),3):
     for j in range(len(row_pokemons)):
         with cols[j]:
             pokemon = row_pokemons[j]
-            with st.expander(label=f"**{i+j+1}.{pokemon["name"]}**",expanded=True):
+            with st.expander(label=f"**{i+j+1}.{pokemon['name']}**",expanded=True):
                 #이름 불러오기
                 st.subheader(pokemon["name"])
                 #이미지 불러오기
